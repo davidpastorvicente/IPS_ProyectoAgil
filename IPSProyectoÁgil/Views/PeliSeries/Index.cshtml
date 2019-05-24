@@ -1,0 +1,81 @@
+﻿@model IEnumerable<IPSProyectoÁgil.Models.PeliSerie>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Titulo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CanalProductora)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Director)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Actores)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.edadRecomendada)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PeliOSerie)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tipo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.anio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.precio)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Titulo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CanalProductora)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Director)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Actores)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.edadRecomendada)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PeliOSerie)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tipo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.anio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.precio)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.PeliSerieId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.PeliSerieId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.PeliSerieId })
+        </td>
+    </tr>
+}
+
+</table>

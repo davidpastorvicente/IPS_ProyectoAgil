@@ -1,0 +1,42 @@
+﻿@model IPSProyectoÁgil.Models.Opiniones
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Opiniones</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nombre_ocio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombre_ocio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tipo_ocio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tipo_ocio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.voto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.voto)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Identificador }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

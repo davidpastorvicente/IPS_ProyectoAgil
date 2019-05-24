@@ -1,0 +1,90 @@
+﻿@model IPSProyectoÁgil.Models.ViajesExperiencia
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ViajesExperiencia</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.autores)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.autores)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.destino)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.destino)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.alojamiento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.alojamiento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.transporte)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.transporte)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.lugarInteres)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.lugarInteres)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.presupuesto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.presupuesto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.duracionVideo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.duracionVideo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.precio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.precio)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Identificador }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
